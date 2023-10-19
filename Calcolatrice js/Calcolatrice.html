@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="Calcolatrice.css">
+    <script >
+
+    function somma(){
+
+        var n1, n2, tot=0;
+        n1 = Number(document.getElementById('a').value);
+        n2 = Number(document.getElementById('b').value);
+        tot = n1 + n2;
+        document.getElementById('ris').value= tot;
+    }
+    function differenza(){
+        var n1, n2, tot=0;
+        n1 = Number(document.getElementById('a').value);
+        n2 = Number(document.getElementById('b').value);
+        tot = n1 - n2;
+        document.getElementById('ris').value= tot;
+    }
+    function prodotto(){
+        var n1, n2, tot=0;
+        n1 = Number(document.getElementById('a').value);
+        n2 = Number(document.getElementById('b').value);
+        tot = n1 * n2;
+        document.getElementById('ris').value= tot;
+    }
+    function divisione(){
+        var n1, n2, tot=0;
+        n1 = Number(document.getElementById('a').value);
+        n2 = Number(document.getElementById('b').value);
+        tot = n1 / n2;
+        document.getElementById('ris').value= tot;
+    }
+
+
+    </script>
+
+  </head>
+  <body>
+
+      <div id="cartolina">
+        <div id="cartolina4">
+
+        </div>
+        <div id="cartolina3">
+
+        </div>
+        <div id="cartolina1">
+
+        </div>
+
+        <div id="cartolina2">
+
+        </div>
+
+        <input type="number" id="a">
+        <input type="number" id="b">
+        <input type="number" id="ris">
+        <button onclick="somma()" class="bottone" id="p"><i>+<i></button>
+        <button onclick="differenza()"class="bottone"id="s"><i>-</i></button>
+        <button onclick="prodotto()" class="bottone"id="t"><i>*</i></button>
+        <button onclick="divisione()" class="bottone"id="q"><i>/</i></button>
+
+      </div>
+  </body>
+</html>
